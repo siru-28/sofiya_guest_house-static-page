@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofiya Guest House (Tora) | Affordable & Comfortable Stay</title>
+  
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. Top Announcement Bar
+       ========================================== -->
+  <div class="top-bar py-2">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> Northern Exit, Tora Town</span>
+        <span class="d-none d-md-inline"><i class="bi bi-clock-fill text-gold me-1"></i> Open: 24/7 Hours</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <span class="badge bg-warning text-dark fw-bold px-2 py-1">
+          <i class="bi bi-tag-fill me-1"></i> 500 ETB / Night Only
+        </span>
+        <a href="tel:+251912345678" class="text-white text-decoration-none fw-semibold">
+          <i class="bi bi-telephone-fill text-gold me-1"></i> 0912 34 56 78
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       2. Navigation Bar
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg sofiya-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" href="#">
+        <img src="./assets/images/icon-sun.svg" alt="Sun" width="34" height="34">
+        <div>
+          <span class="font-serif fw-bold fs-4 text-primary-dark d-block lh-1">Sofiya</span>
+          <small class="text-muted text-uppercase fw-semibold" style="font-size: 0.65rem; letter-spacing: 0.1em;">Guest House • Tora</small>
+        </div>
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#sofiyaNav" aria-controls="sofiyaNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="sofiyaNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home"><i class="bi bi-house me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="bi bi-info-circle me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rooms"><i class="bi bi-door-open me-1"></i> Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#amenities"><i class="bi bi-stars me-1"></i> Amenities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="bi bi-geo-alt me-1"></i> Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="#booking" class="btn btn-gold text-decoration-none shadow-sm">
+            <i class="bi bi-calendar-check me-1"></i> Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       3. Hero Section
+       ========================================== -->
+  <header id="home" class="hero-section">
+    <div class="hero-pattern"></div>
+    <div class="container position-relative py-lg-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="hero-badge-price mb-3">
+            <i class="bi bi-check-circle-fill text-gold"></i>
+            <span>Top Choice in Tora Town • Only 500 ETB / Night</span>
+          </div>
+          <h1 class="hero-title font-serif mb-3">
+            Comfortable, Clean &amp; Peaceful Stay in Tora Town!
+          </h1>
+          <p class="lead text-white-50 mb-4 pe-lg-4" style="font-size: 1.125rem;">
+            Whether you are visiting for business, family, or travel, enjoy clean beds, 24/7 hot showers, and reliable security at our welcoming guest house.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#booking" class="btn btn-gold btn-lg px-4 shadow">
+              <i class="bi bi-calendar-check-fill me-2"></i> Book a Room (500 ETB)
+            </a>
+            <a href="tel:+251912345678" class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-telephone-outbound me-2"></i> Call Us Today
+            </a>
+          </div>
+          <!-- Hero highlights row -->
+          <div class="row g-3 pt-3 border-top border-secondary border-opacity-25 text-white-50">
+            <div class="col-sm-3 col-6 d-flex align-items-center gap-2">
+              <i class="bi bi-wifi text-gold fs-4"></i>
+              <span class="small text-white">Free Fast Wi-Fi</span>
+            </div>
+            <div class="col-sm-3 col-6 d-flex align-items-center gap-2">
+              <i class="bi bi-shield-check text-gold fs-4"></i>
+              <span class="small text-white">24/7 Security</span>
+            </div>
+            <div class="col-sm-3 col-6 d-flex align-items-center gap-2">
+              <i class="bi bi-droplet-half text-gold fs-4"></i>
+              <span class="small text-white">Hot Showers</span>
+            </div>
+            <div class="col-sm-3 col-6 d-flex align-items-center gap-2">
+              <i class="bi bi-p-square text-gold fs-4"></i>
+              <span class="small text-white">Free Parking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Room Preview Card in Hero -->
+          <div class="card border-0 shadow-lg overflow-hidden rounded-4 bg-white text-dark">
+            <div class="position-relative" style="height: 240px; background: linear-gradient(135deg, #1e3d36, #3d6a5f); display: flex; align-items: center; justify-content: center;">
+              <div class="text-center text-white px-3">
+                <i class="bi bi-door-closed display-3 text-gold opacity-75 mb-2 d-block"></i>
+                <h5 class="fw-bold mb-1">Standard Comfortable Bedroom</h5>
+                <span class="small opacity-75">Clean, Quiet &amp; Restful</span>
+              </div>
+              <div class="position-absolute top-0 end-0 m-3 badge bg-warning text-dark fs-6 px-3 py-2 fw-bold shadow">
+                500 ETB / Night
+              </div>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title font-serif fw-bold text-primary-dark mb-2">Sofiya Guest House • Tora</h5>
+              <p class="card-text text-muted small mb-3">
+                Rest peacefully away from street noise. We focus on clean rooms and hot showers. We do not serve food, helping keep rates affordable with great local dining just steps away.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                <div>
+                  <span class="text-muted small d-block">Rate per night:</span>
+                  <span class="fs-4 fw-bold text-success font-serif">500 ETB</span>
+                </div>
+                <a href="#booking" class="btn btn-primary-custom btn-sm px-3">
+                  Reserve Now <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       4. About & Key Values Section
+       ========================================== -->
+  <section id="about" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-success-subtle text-success text-uppercase px-3 py-2 rounded-pill fw-semibold mb-2">
+          About Us • Sofiya Guest House
+        </span>
+        <h2 class="font-serif fw-bold text-primary-dark display-6 mb-3">
+          Why Choose Sofiya Guest House?
+        </h2>
+        <p class="text-muted">
+          We are dedicated to offering honest, warm hospitality in Tora Town. We provide budget-friendly, high-quality accommodation focusing on what matters most: comfort, cleanliness, and security.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Feature 1: Wi-Fi -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-wifi"></i>
+            </div>
+            <h4 class="font-serif fw-bold mb-2">Free Fast Wi-Fi</h4>
+            <p class="text-muted mb-0">
+              Stay connected with high-speed unlimited Wi-Fi available throughout the guest house for work, family calls, and leisure.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Rate -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-cash-coin"></i>
+            </div>
+            <h4 class="font-serif fw-bold mb-2">Affordable Rate (500 ETB)</h4>
+            <p class="text-muted mb-0">
+              Enjoy a clean, private room for only 500 Ethiopian Birr per night. Perfect value for business travelers and vacationers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3: Water & Shower -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-droplet-half"></i>
+            </div>
+            <h4 class="font-serif fw-bold mb-2">Clean Water &amp; Shower</h4>
+            <p class="text-muted mb-0">
+              Refresh after your road trip with reliable 24/7 running water and hot shower facilities in each room.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Security -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h4 class="font-serif fw-bold mb-2">Quiet &amp; 24/7 Security</h4>
+            <p class="text-muted mb-0">
+              Gated compound protected 24 hours a day by security personnel so you and your belongings stay completely safe.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5: Dining Note -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-cup-hot"></i>
+            </div>
+            <h4 class="font-serif fw-bold mb-2">Dining Note (Nearby Cafes)</h4>
+            <p class="text-muted mb-0">
+              We <strong>do not serve food</strong>. However, great local Ethiopian restaurants, breakfast cafes, and coffee houses are just a 1-minute walk away.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6: Parking -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <i class="bi bi-car-front"></i>
+            </div>
+            <h4 class="font-serif fw-bold mb-2">Secure Parking</h4>
+            <p class="text-muted mb-0">
+              Spacious and secure on-site parking available for your car, motorbike, or bajaj inside the gated compound.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. Rooms Section
+       ========================================== -->
+  <section id="rooms" class="py-5 bg-white border-top border-bottom">
+    <div class="container py-lg-4">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-8">
+          <span class="badge bg-warning-subtle text-warning-emphasis text-uppercase px-3 py-2 rounded-pill fw-semibold mb-2">
+            Room Showcase
+          </span>
+          <h2 class="font-serif fw-bold text-primary-dark display-6 mb-2">
+            Clean, Quiet &amp; Restful Rooms
+          </h2>
+          <p class="text-muted mb-0">
+            Quality standard rooms tailored for single guests, couples, and traveling professionals.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="#booking" class="btn btn-gold">
+            <i class="bi bi-arrow-down-circle me-1"></i> Go to Booking Form
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Room Card -->
+        <div class="col-md-8 col-lg-6">
+          <div class="room-card">
+            <div class="room-image-box">
+              <div class="text-center">
+                <i class="bi bi-moon-stars display-2 text-gold mb-2"></i>
+                <h4 class="fw-bold mb-1">Standard Bedroom</h4>
+                <p class="small text-white-50">Ideal for 1 or 2 Guests</p>
+              </div>
+              <div class="room-price-badge">
+                500 ETB / Night
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="font-serif fw-bold mb-0 text-primary-dark">Room Amenities</h4>
+                <span class="badge bg-success"><i class="bi bi-check-lg me-1"></i> Available Now</span>
+              </div>
+              
+              <ul class="list-unstyled mb-4">
+                <li class="py-2 border-bottom d-flex align-items-center gap-2">
+                  <i class="bi bi-wifi text-success fs-5"></i>
+                  <span>Free High-speed Wi-Fi (Unlimited)</span>
+                </li>
+                <li class="py-2 border-bottom d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-success fs-5"></i>
+                  <span>Comfortable mattress with freshly cleaned linens</span>
+                </li>
+                <li class="py-2 border-bottom d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-success fs-5"></i>
+                  <span>Private clean bathroom and hot shower</span>
+                </li>
+                <li class="py-2 border-bottom d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-success fs-5"></i>
+                  <span>24/7 electricity with phone &amp; laptop charging outlets</span>
+                </li>
+                <li class="py-2 border-bottom d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-success fs-5"></i>
+                  <span>Luggage table and clothes hanger</span>
+                </li>
+                <li class="py-2 d-flex align-items-center gap-2 text-muted">
+                  <i class="bi bi-info-circle text-warning fs-5"></i>
+                  <span>Note: Food not included (great dining steps away)</span>
+                </li>
+              </ul>
+
+              <div class="d-grid">
+                <a href="#booking" class="btn btn-primary-custom py-2 fs-6">
+                  <i class="bi bi-calendar-plus me-2"></i> Reserve This Room
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. Amenities Grid
+       ========================================== -->
+  <section id="amenities" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-primary-subtle text-primary text-uppercase px-3 py-2 rounded-pill fw-semibold mb-2">
+          Services &amp; Facilities
+        </span>
+        <h2 class="font-serif fw-bold text-primary-dark display-6 mb-3">
+          Everything You Need for a Good Rest
+        </h2>
+        <p class="text-muted">
+          Essential amenities provided for peace of mind and convenience during your stay.
+        </p>
+      </div>
+
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-wifi text-primary display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">Free Wi-Fi</h6>
+            <small class="text-muted">High-speed Internet</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-droplet text-info display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">Water Supply</h6>
+            <small class="text-muted">Backup Water Reservoir</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-lightning-charge text-warning display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">24/7 Power</h6>
+            <small class="text-muted">Device Charging</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-shield-check text-success display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">24/7 Security</h6>
+            <small class="text-muted">Gated Compound</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-p-circle text-primary display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">Parking Lot</h6>
+            <small class="text-muted">Safe On-site Space</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-cup-straw text-danger display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">Nearby Cafes</h6>
+            <small class="text-muted">1-minute walk away</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-shop text-secondary display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">Local Dining</h6>
+            <small class="text-muted">Traditional Dishes</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 border-0 p-3 text-center rounded-4 shadow-sm">
+            <i class="bi bi-geo-alt text-success display-6 mb-2"></i>
+            <h6 class="fw-bold mb-1">Prime Location</h6>
+            <small class="text-muted">Near Main Road</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. Interactive Booking Form & Price Calculator
+       ========================================== -->
+  <section id="booking" class="py-5 bg-white border-top">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-4">
+            <span class="badge bg-warning-subtle text-warning-emphasis text-uppercase px-3 py-2 rounded-pill fw-semibold mb-2">
+              Reservation Form
+            </span>
+            <h2 class="font-serif fw-bold text-primary-dark display-6 mb-2">
+              Book Your Stay Online
+            </h2>
+            <p class="text-muted">
+              Select your dates; our system calculates your stay automatically (only 500 ETB per night).
+            </p>
+          </div>
+
+          <div class="booking-card">
+            <form id="bookingForm" novalidate>
+              <div class="row g-3 mb-4">
+                <!-- Check-in Date -->
+                <div class="col-md-6">
+                  <label for="checkInDate" class="form-label fw-semibold">
+                    <i class="bi bi-calendar-event text-primary me-1"></i> Check-in Date
+                  </label>
+                  <input type="date" class="form-control" id="checkInDate" required>
+                  <div class="invalid-feedback">Please choose a valid check-in date.</div>
+                </div>
+
+                <!-- Check-out Date -->
+                <div class="col-md-6">
+                  <label for="checkOutDate" class="form-label fw-semibold">
+                    <i class="bi bi-calendar-check text-primary me-1"></i> Check-out Date
+                  </label>
+                  <input type="date" class="form-control" id="checkOutDate" required>
+                  <div class="invalid-feedback">Check-out date must be after check-in date.</div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="col-md-6">
+                  <label for="guestsCount" class="form-label fw-semibold">
+                    <i class="bi bi-people text-primary me-1"></i> Guests
+                  </label>
+                  <select class="form-select" id="guestsCount">
+                    <option value="1" selected>1 Guest</option>
+                    <option value="2">2 Guests</option>
+                  </select>
+                </div>
+
+                <!-- Room Type -->
+                <div class="col-md-6">
+                  <label for="roomType" class="form-label fw-semibold">
+                    <i class="bi bi-door-closed text-primary me-1"></i> Room Type
+                  </label>
+                  <select class="form-select" id="roomType" disabled>
+                    <option value="standard" selected>Standard Room - 500 ETB/Night</option>
+                  </select>
+                </div>
+
+                <!-- Guest Name -->
+                <div class="col-md-6">
+                  <label for="guestName" class="form-label fw-semibold">
+                    <i class="bi bi-person text-primary me-1"></i> Full Name
+                  </label>
+                  <input type="text" class="form-control" id="guestName" placeholder="e.g. Kasahun Bekele" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6">
+                  <label for="guestPhone" class="form-label fw-semibold">
+                    <i class="bi bi-telephone text-primary me-1"></i> Phone Number
+                  </label>
+                  <input type="tel" class="form-control" id="guestPhone" placeholder="0911 22 33 44" required>
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+
+                <!-- Notes / Requests -->
+                <div class="col-12">
+                  <label for="guestNotes" class="form-label fw-semibold">
+                    <i class="bi bi-chat-left-dots text-primary me-1"></i> Special Requests or Arrival Time (Optional)
+                  </label>
+                  <textarea class="form-control" id="guestNotes" rows="2" placeholder="Let us know your expected arrival time or special requirements..."></textarea>
+                </div>
+              </div>
+
+              <!-- Live Price Breakdown Box -->
+              <div class="price-summary-box mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-muted"><i class="bi bi-calculator me-1"></i> Total Nights:</span>
+                  <span class="fw-bold fs-5 text-primary-dark" id="displayNights">1 Night</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-muted"><i class="bi bi-tag me-1"></i> Rate per Night:</span>
+                  <span class="fw-semibold text-muted">500 ETB</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-muted"><i class="bi bi-wifi me-1"></i> High-Speed Wi-Fi:</span>
+                  <span class="badge bg-success-subtle text-success">Free &amp; Unlimited</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-muted"><i class="bi bi-egg-fried me-1"></i> Breakfast Service:</span>
+                  <span class="badge bg-secondary-subtle text-secondary">No Food Service</span>
+                </div>
+                <hr class="my-2 border-secondary border-opacity-25">
+                <div class="d-flex justify-content-between align-items-center pt-1">
+                  <span class="fs-5 fw-bold text-primary-dark">Total Amount Due:</span>
+                  <span class="fs-3 fw-bold text-success font-serif" id="displayTotal">500 ETB</span>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-gold btn-lg py-3 shadow">
+                  <i class="bi bi-receipt-cutoff me-2"></i> Confirm Room &amp; Get Booking Voucher
+                </button>
+                <small class="text-center text-muted mt-1">
+                  <i class="bi bi-shield-check text-success me-1"></i> Pay upon arrival in person via Cash or Telebirr
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. Location & Contact Section
+       ========================================== -->
+  <section id="contact" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-success-subtle text-success text-uppercase px-3 py-2 rounded-pill fw-semibold mb-2">
+          Location &amp; Contact
+        </span>
+        <h2 class="font-serif fw-bold text-primary-dark display-6 mb-3">
+          Where to Find Us
+        </h2>
+        <p class="text-muted">
+          Conveniently located along the main road in Tora Town. Call us anytime for directions or assistance.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5">
+          <div class="card h-100 border-0 p-4 rounded-4 shadow-sm bg-white">
+            <h4 class="font-serif fw-bold text-primary-dark mb-4">Sofiya Guest House Details</h4>
+            
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="feature-icon-box flex-shrink-0 mb-0">
+                <i class="bi bi-geo-alt-fill text-gold"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Address</h6>
+                <p class="text-muted mb-0">Tora Town Main Highway, Central Ethiopia</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="feature-icon-box flex-shrink-0 mb-0">
+                <i class="bi bi-telephone-fill text-gold"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Phone Numbers</h6>
+                <p class="text-muted mb-1"><a href="tel:+251912345678" class="text-decoration-none text-dark fw-semibold">0912 34 56 78</a></p>
+                <p class="text-muted mb-0"><a href="tel:+251922345678" class="text-decoration-none text-dark fw-semibold">0922 34 56 78</a></p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="feature-icon-box flex-shrink-0 mb-0">
+                <i class="bi bi-clock-history text-gold"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Reception Hours</h6>
+                <p class="text-muted mb-0">Open 24/7 for Check-in &amp; Inquiries</p>
+              </div>
+            </div>
+
+            <div class="pt-3 border-top mt-auto">
+              <span class="text-muted small d-block mb-2">Message Us Directly:</span>
+              <div class="d-flex gap-2">
+                <a href="https://t.me" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                  <i class="bi bi-telegram me-1"></i> Telegram
+                </a>
+                <a href="tel:+251912345678" class="btn btn-outline-success btn-sm rounded-pill px-3">
+                  <i class="bi bi-whatsapp me-1"></i> WhatsApp / Call
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <!-- Visual Direction Card -->
+          <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm bg-white">
+            <div class="p-4 bg-light border-bottom d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="fw-bold mb-0 text-primary-dark"><i class="bi bi-map me-1 text-gold"></i> Tora Town Map &amp; Directions</h6>
+                <small class="text-muted">Central Highway Access</small>
+              </div>
+              <span class="badge bg-primary text-white">Tora (ቶራ)</span>
+            </div>
+            <div class="p-4 p-lg-5 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 280px; background: linear-gradient(135deg, #f7f9f8, #eef3f1);">
+              <i class="bi bi-pin-map-fill text-danger display-4 mb-3"></i>
+              <h5 class="fw-bold text-primary-dark mb-2">Located in Central Tora Town</h5>
+              <p class="text-muted small max-w-500 mb-4">
+                When you reach the Tora bus station or town square, ask for <strong>"Sofiya Guest House"</strong>, or simply give us a quick call and our team will gladly meet you at the entrance!
+              </p>
+              <a href="tel:+251912345678" class="btn btn-gold px-4">
+                <i class="bi bi-telephone-inbound me-2"></i> Call for Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. Footer
+       ========================================== -->
+  <footer class="sofiya-footer py-5">
+    <div class="container">
+      <div class="row g-4 justify-content-between align-items-center pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="./assets/images/icon-sun.svg" alt="Sun" width="28" height="28">
+            <span class="font-serif fw-bold fs-4 text-white">Sofiya Guest House</span>
+          </div>
+          <p class="text-white-50 small mb-0">
+            Comfortable, clean, and restful lodging in Tora Town. High security, hot showers, and caring service for only 500 ETB.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#home" class="text-white-50 text-decoration-none small px-2">Home</a></li>
+            <li class="list-inline-item"><a href="#about" class="text-white-50 text-decoration-none small px-2">About</a></li>
+            <li class="list-inline-item"><a href="#rooms" class="text-white-50 text-decoration-none small px-2">Rooms</a></li>
+            <li class="list-inline-item"><a href="#booking" class="text-white-50 text-decoration-none small px-2">Book Now</a></li>
+            <li class="list-inline-item"><a href="#contact" class="text-white-50 text-decoration-none small px-2">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="pt-4 text-center text-white-50 small">
+        <p class="mb-0">
+          © 2026 Sofiya Guest House (Tora Town). All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom Logic JS -->
+  <script src="script.js"></script>
+</body>
+</html>

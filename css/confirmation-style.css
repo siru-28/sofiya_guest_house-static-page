@@ -1,0 +1,542 @@
+/* ===================================================
+   Maison Soleil - Hotel Booking Confirmation Page
+   Design Tokens & Base Styles
+   =================================================== */
+
+:root {
+  /* Neutral Colors */
+  --neutral-900: hsl(33, 15%, 15%);
+  --neutral-800: hsl(33, 22%, 20%);
+  --neutral-700: hsl(32, 20%, 29%);
+  --neutral-600: hsl(33, 17%, 41%);
+  --neutral-400: hsl(36, 22%, 86%);
+  --neutral-200: hsl(30, 24%, 93%);
+  --neutral-100: hsl(35, 60%, 96%);
+  --neutral-50: hsl(40, 60%, 98%);
+  --neutral-0: hsl(0, 0%, 100%);
+
+  /* Sun Accent Colors */
+  --sun-500: hsl(42, 83%, 58%);
+  --sun-300: hsl(44, 84%, 75%);
+  --sun-200: hsl(45, 100%, 74%);
+  --sun-50: hsl(41, 100%, 93%);
+
+  /* Terracotta Accent Colors */
+  --terracotta-700: hsl(15, 69%, 37%);
+  --terracotta-600: hsl(15, 74%, 41%);
+  --terracotta-500: hsl(18, 62%, 47%);
+  --terracotta-400: hsl(22, 72%, 56%);
+
+  /* Secondary Accents */
+  --blue-500: hsl(230, 49%, 56%);
+  --rose-500: hsl(340, 48%, 52%);
+
+  /* Typography Families */
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--neutral-50);
+  color: var(--neutral-900);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography utility classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-terracotta {
+  color: var(--terracotta-500) !important;
+}
+
+.tracking-wider {
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--neutral-600);
+}
+
+/* ---------------------------------------------------
+   1. Mobile Header Styles
+   --------------------------------------------------- */
+.mobile-header {
+  background-color: var(--neutral-50);
+  border-bottom: 1px solid transparent;
+}
+
+.btn-menu-toggle {
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+  border: 1px solid var(--neutral-400);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-menu-toggle:hover {
+  background-color: var(--neutral-100);
+  border-color: var(--neutral-600);
+}
+
+/* ---------------------------------------------------
+   2. Hero Section & Custom Buttons
+   --------------------------------------------------- */
+.booking-title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--neutral-900);
+}
+
+.btn-hotel-outline {
+  background-color: var(--neutral-0);
+  color: var(--neutral-900);
+  border: 1px solid var(--neutral-400);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.625rem 0.75rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-hotel-outline:hover {
+  background-color: var(--neutral-100);
+  border-color: var(--neutral-600);
+  color: var(--neutral-900);
+}
+
+.btn-hotel-dark {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+  border: 1px solid var(--neutral-900);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.625rem 0.75rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-hotel-dark:hover {
+  background-color: var(--neutral-800);
+  border-color: var(--neutral-800);
+  color: var(--neutral-0);
+}
+
+@media (min-width: 375px) {
+  .btn-hotel-outline,
+  .btn-hotel-dark {
+    font-size: 0.875rem;
+    padding: 0.625rem 1rem;
+  }
+}
+
+/* ---------------------------------------------------
+   3. Welcome / Host Note Card Styles
+   --------------------------------------------------- */
+.card-welcome {
+  background: linear-gradient(165deg, hsl(18, 62%, 47%) 0%, hsl(15, 74%, 38%) 100%);
+  border-radius: 24px;
+  color: var(--neutral-0);
+  box-shadow: 0 12px 32px rgba(183, 65, 27, 0.25);
+  position: relative;
+  z-index: 2;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem !important;
+}
+
+/* Perforated dashed line at the top */
+.welcome-card-perforation {
+  border-top: 1.5px dashed rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.welcome-badge-text {
+  color: #ffffff !important;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.welcome-subtitle {
+  font-size: 1.15rem;
+  color: var(--sun-200);
+}
+
+.welcome-title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--neutral-0);
+}
+
+.welcome-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ---------------------------------------------------
+   4. Receipt Card Styles
+   --------------------------------------------------- */
+.card-receipt {
+  background-color: var(--neutral-0);
+  border-radius: 20px;
+  color: var(--neutral-900);
+  box-shadow: 0 16px 40px rgba(44, 39, 36, 0.08);
+  padding: 1.75rem !important;
+  border: 1px solid rgba(44, 39, 36, 0.06);
+  position: relative;
+  transform: rotate(1deg); /* subtle realistic paper tilt */
+  transition: transform 0.3s ease;
+}
+
+.receipt-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--neutral-900);
+}
+
+.receipt-divider-dashed {
+  border-top: 1px dashed var(--neutral-400);
+  width: 100%;
+}
+
+.receipt-divider-solid {
+  border-top: 1px solid var(--neutral-400);
+  width: 100%;
+}
+
+.receipt-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  padding: 0.35rem 0;
+}
+
+.receipt-item-label {
+  color: var(--neutral-700);
+}
+
+.receipt-item-price {
+  font-family: var(--font-mono);
+  color: var(--neutral-900);
+  font-weight: 500;
+}
+
+.receipt-total-price {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--neutral-900);
+}
+
+/* ---------------------------------------------------
+   5. Guest Info Cards (Arrival, Wifi, Breakfast)
+   --------------------------------------------------- */
+.text-blue {
+  color: var(--blue-500) !important;
+}
+
+.text-rose {
+  color: var(--rose-500) !important;
+}
+
+.card-info {
+  background-color: var(--neutral-0);
+  border-radius: 20px;
+  border: 1px solid rgba(44, 39, 36, 0.06);
+  box-shadow: 0 8px 24px rgba(44, 39, 36, 0.04);
+  padding: 1.5rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.info-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-terracotta {
+  background-color: var(--terracotta-500);
+}
+
+.badge-blue {
+  background-color: var(--blue-500);
+}
+
+.badge-rose {
+  background-color: var(--rose-500);
+}
+
+.wifi-box {
+  background-color: var(--neutral-100);
+  border-radius: 12px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.8125rem;
+}
+
+.wifi-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.btn-copy-wifi {
+  background-color: var(--neutral-0);
+  color: var(--neutral-800);
+  border: 1px solid var(--neutral-400);
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  padding: 0.15rem 0.65rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-copy-wifi:hover {
+  background-color: var(--neutral-200);
+  border-color: var(--neutral-600);
+}
+
+.line-height-relaxed {
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------
+   6. Mobile Menu (Offcanvas) & Sidebar Shared Styles
+   --------------------------------------------------- */
+.desktop-sidebar {
+  width: 280px;
+  min-width: 280px;
+  background-color: var(--neutral-50);
+  border-color: rgba(44, 39, 36, 0.08) !important;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.offcanvas-mobile-menu {
+  background-color: var(--neutral-50) !important;
+  border: none !important;
+  width: 100% !important;
+  max-width: 480px;
+}
+
+.nav-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  color: var(--neutral-800);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+}
+
+.nav-menu-link:hover {
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+.nav-menu-link.active {
+  background-color: var(--neutral-0);
+  box-shadow: 0 4px 16px rgba(44, 39, 36, 0.05);
+  color: var(--neutral-900);
+}
+
+.nav-badge-notification {
+  width: 22px;
+  height: 22px;
+  background-color: var(--terracotta-600);
+  color: #ffffff;
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Weather Widget Card */
+.card-weather {
+  background: linear-gradient(135deg, hsl(44, 84%, 75%) 0%, hsl(42, 83%, 64%) 100%);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 6px 20px rgba(237, 182, 58, 0.2);
+}
+
+.weather-location-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: hsl(33, 25%, 25%);
+}
+
+.weather-temp {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1;
+  color: hsl(33, 20%, 15%);
+  margin: 0.25rem 0;
+}
+
+.weather-desc {
+  font-size: 0.8125rem;
+  color: hsl(33, 25%, 25%);
+  margin: 0;
+}
+
+.weather-sun-sphere {
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffe699 0%, #ebb233 60%, #cf8e17 100%);
+  box-shadow: 0 4px 20px rgba(207, 142, 23, 0.3);
+  pointer-events: none;
+}
+
+.menu-divider-dotted {
+  border-top: 1px dotted var(--neutral-400);
+  width: 100%;
+}
+
+.menu-footer-text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--neutral-600);
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------
+   7. Desktop Fanned Cards Layout & Hover Animations
+   --------------------------------------------------- */
+.hover-fan-hint {
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  color: var(--neutral-600);
+}
+
+.cards-fanned-wrapper {
+  display: flex;
+  flex-direction: column-reverse; /* Mobile: Welcome card on top, Receipt on bottom! */
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .cards-display-area {
+    padding: 1.5rem 0 2rem;
+  }
+
+  .cards-fanned-wrapper {
+    flex-direction: row; /* Desktop: Receipt on left, Welcome on right! */
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+    padding: 1.5rem 0 2.5rem;
+  }
+
+  /* Receipt Card on the left, tilted -3deg */
+  .cards-fanned-wrapper .card-receipt {
+    width: 390px;
+    max-width: 390px;
+    transform: rotate(-3deg);
+    z-index: 1;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    margin-bottom: 0 !important;
+  }
+
+  /* Welcome Card on the right, overlapping, tilted 2deg */
+  .cards-fanned-wrapper .card-welcome {
+    width: 380px;
+    max-width: 380px;
+    min-height: 490px;
+    transform: rotate(2deg) translateY(-8px);
+    margin-left: -50px;
+    margin-bottom: 0 !important;
+    z-index: 2;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  }
+
+  /* Interactive Hover to Fan Effect */
+  .cards-fanned-wrapper:hover .card-receipt {
+    transform: rotate(-6deg) translateX(-30px) translateY(-5px);
+    box-shadow: 0 24px 48px rgba(44, 39, 36, 0.14);
+  }
+
+  .cards-fanned-wrapper:hover .card-welcome {
+    transform: rotate(5deg) translateX(30px) translateY(-12px);
+    box-shadow: 0 24px 48px rgba(183, 65, 27, 0.3);
+  }
+}

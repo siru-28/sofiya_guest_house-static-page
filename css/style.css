@@ -1,0 +1,504 @@
+/* ===================================================
+   ሶፊያ እንግዳ ማረፊያ (Sofiya Guest House - Tora)
+   Custom Stylesheet & Design System
+   =================================================== */
+
+:root {
+  /* Brand Colors - Warm Ethiopian Hospitality Palette */
+  --primary: #1e3d36;        /* Deep Forest Green - Trust & Stability */
+  --primary-dark: #142b26;
+  --primary-light: #2c584e;
+  --accent-gold: #c9933b;     /* Warm Gold / Amber - Elegance & Value */
+  --accent-gold-light: #f4e5c7;
+  --accent-warm: #d97746;     /* Warm Terracotta Accent */
+  
+  --bg-cream: #faf8f5;       /* Warm background */
+  --bg-white: #ffffff;
+  --neutral-900: #1f2421;
+  --neutral-700: #495057;
+  --neutral-500: #868e96;
+  --neutral-200: #e9ecef;
+  --neutral-100: #f8f9fa;
+
+  --shadow-sm: 0 2px 8px rgba(30, 61, 54, 0.06);
+  --shadow-md: 0 8px 24px rgba(30, 61, 54, 0.08);
+  --shadow-lg: 0 16px 40px rgba(30, 61, 54, 0.12);
+
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-cream);
+  color: var(--neutral-900);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography Helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.text-gold {
+  color: var(--accent-gold) !important;
+}
+
+.text-primary-dark {
+  color: var(--primary-dark) !important;
+}
+
+/* ---------------------------------------------------
+   1. Top Announcement Bar
+   --------------------------------------------------- */
+.top-bar {
+  background-color: var(--primary-dark);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+}
+
+/* ---------------------------------------------------
+   2. Navigation Bar
+   --------------------------------------------------- */
+.sofiya-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 16px rgba(30, 61, 54, 0.06);
+  transition: all 0.3s ease;
+}
+
+.brand-badge {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--accent-gold);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(30, 61, 54, 0.15);
+}
+
+.nav-link {
+  color: var(--neutral-700) !important;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+  background-color: rgba(44, 88, 78, 0.06);
+}
+
+/* ---------------------------------------------------
+   3. Custom Buttons
+   --------------------------------------------------- */
+.btn-gold {
+  background: linear-gradient(135deg, #d8a247, #c18b32);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(201, 147, 59, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #c18b32, #a87624);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 147, 59, 0.35);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------------------------------------------------
+   4. Hero Section
+   --------------------------------------------------- */
+.hero-section {
+  position: relative;
+  background: linear-gradient(165deg, #17322c 0%, #0e201c 100%);
+  color: #ffffff;
+  padding: 5rem 0 6rem;
+  overflow: hidden;
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(201, 147, 59, 0.12) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+  opacity: 0.7;
+}
+
+.hero-badge-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(201, 147, 59, 0.18);
+  border: 1px solid rgba(201, 147, 59, 0.35);
+  color: #f7e1b5;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* ---------------------------------------------------
+   5. Feature & Info Cards
+   --------------------------------------------------- */
+.feature-card {
+  background-color: var(--bg-white);
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid rgba(30, 61, 54, 0.08);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(201, 147, 59, 0.3);
+}
+
+.feature-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: rgba(30, 61, 54, 0.08);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ---------------------------------------------------
+   6. Room Showcase Card
+   --------------------------------------------------- */
+.room-card {
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(30, 61, 54, 0.08);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.room-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201, 147, 59, 0.4);
+}
+
+.room-image-box {
+  height: 240px;
+  background: linear-gradient(135deg, #325a50, #1c3630);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.room-price-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: var(--accent-gold);
+  color: #ffffff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------------------
+   7. Booking Form Card
+   --------------------------------------------------- */
+.booking-card {
+  background-color: var(--bg-white);
+  border-radius: 24px;
+  padding: 2.25rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(30, 61, 54, 0.08);
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--neutral-200);
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(30, 61, 54, 0.12);
+}
+
+.price-summary-box {
+  background: linear-gradient(135deg, rgba(30, 61, 54, 0.04), rgba(201, 147, 59, 0.06));
+  border: 1.5px dashed rgba(201, 147, 59, 0.4);
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+/* ---------------------------------------------------
+   8. Footer
+   --------------------------------------------------- */
+.sofiya-footer {
+  background-color: var(--primary-dark);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.875rem;
+}
+
+
+/* ===================================================
+   9. Confirmation & Voucher Styles (Sofiya - Tora)
+   =================================================== */
+
+.voucher-page {
+  background-color: var(--bg-cream);
+  min-height: 100vh;
+}
+
+.voucher-header {
+  border-bottom: 1px solid rgba(30, 61, 54, 0.08);
+}
+
+/* Fanned Cards Layout on Desktop */
+.cards-fanned-container {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .cards-fanned-container {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Welcome Host Card */
+.card-welcome {
+  background: linear-gradient(165deg, #244b42 0%, #132a25 100%);
+  border-radius: 24px;
+  color: #ffffff;
+  box-shadow: 0 16px 36px rgba(19, 42, 37, 0.25);
+  padding: 2rem !important;
+  position: relative;
+  z-index: 2;
+  transition: all 0.35s ease;
+}
+
+@media (min-width: 992px) {
+  .card-welcome {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 380px;
+    height: 440px;
+    transform: rotate(3deg);
+  }
+  .card-welcome:hover {
+    transform: rotate(0deg) scale(1.02);
+    z-index: 5;
+  }
+}
+
+.welcome-card-perforation {
+  border-top: 1.5px dashed rgba(201, 147, 59, 0.4);
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Receipt Ticket Card */
+.card-receipt {
+  background-color: #ffffff;
+  border-radius: 24px;
+  color: var(--neutral-900);
+  box-shadow: 0 16px 40px rgba(30, 61, 54, 0.1);
+  padding: 2rem !important;
+  border: 1px solid rgba(30, 61, 54, 0.08);
+  position: relative;
+  z-index: 1;
+  transition: all 0.35s ease;
+}
+
+@media (min-width: 992px) {
+  .card-receipt {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 390px;
+    height: 450px;
+    transform: rotate(-3deg);
+  }
+  .card-receipt:hover {
+    transform: rotate(0deg) scale(1.02);
+    z-index: 5;
+  }
+}
+
+.receipt-divider-dashed {
+  border-top: 1px dashed #d1d5db;
+  width: 100%;
+}
+
+.receipt-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 0.35rem 0;
+}
+
+.receipt-barcode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 38px;
+  margin: 0.75rem 0 0.25rem;
+  opacity: 0.85;
+}
+
+.barcode-bar {
+  background-color: #1f2421;
+  height: 100%;
+}
+
+/* 3 Info Cards */
+.card-info {
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(30, 61, 54, 0.08);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem !important;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-info:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.info-icon-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+/* Print Styling */
+@media print {
+  .no-print, nav, .voucher-header, .sofiya-footer, .btn, .cards-fanned-container .card-welcome {
+    display: none !important;
+  }
+  body, .voucher-page {
+    background: #ffffff !important;
+  }
+  .card-receipt {
+    position: static !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border: 1.5px solid #000000 !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+}
+
+
+/* ---------------------------------------------------
+   10. Wi-Fi Card & Copy Badge Styles
+   --------------------------------------------------- */
+.wifi-box {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-200);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.wifi-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-copy-wifi {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-300);
+  background-color: #ffffff;
+  color: var(--neutral-700);
+  transition: all 0.2s ease;
+}
+
+.btn-copy-wifi:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.btn-copy-wifi.copied {
+  background-color: #198754;
+  color: #ffffff;
+  border-color: #198754;
+}
